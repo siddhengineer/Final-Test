@@ -1,0 +1,16 @@
+# requirements.txt
+# ----------------
+# For PyTorch with CUDA 12.1 (adjust if your CUDA version is different, e.g., cu118 for CUDA 11.8)
+# Check https://pytorch.org/get-started/locally/ for the correct command for your system.
+# pip install torch torchvision torchaudio --index-url https://download.pytorch.org/whl/cu121
+transformers>=4.30.0
+qdrant-client>=1.7.0 # Updated for potentially better features
+datasets>=2.12.0
+accelerate>=0.20.0 # For flash_attention_2 and general acceleration
+streamlit>=1.25.0
+Pillow>=9.0.0
+numpy>=1.20.0
+pandas>=1.5.0
+scikit-learn # For potential future evaluation
+# flash-attn is needed for attn_implementation='flash_attention_2'
+# pip install flash-attn --no-build-isolation (if pre-built wheel is not available for your system)
